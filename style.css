@@ -929,3 +929,247 @@ a {
     margin-top: 28px !important;
   }
 }
+
+/* =====================================================
+   CORREÇÃO MOBILE FINAL — HERO EM COLUNA
+   ===================================================== */
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: 100svh !important;
+    height: auto !important;
+    padding: 26px 22px 120px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+
+    overflow: hidden !important;
+  }
+
+  .hero-bg img {
+    object-fit: cover !important;
+    object-position: 42% center !important;
+    transform: scale(1.04) !important;
+    opacity: 0.55 !important;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(2, 7, 15, 0.12) 0%,
+        rgba(2, 7, 15, 0.28) 38%,
+        rgba(2, 7, 15, 0.88) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgba(2, 7, 15, 0.44) 0%,
+        rgba(2, 7, 15, 0.20) 55%,
+        rgba(2, 7, 15, 0.36) 100%
+      ) !important;
+  }
+
+  .hero-content {
+    order: 1 !important;
+    position: relative !important;
+    z-index: 30 !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    padding-top: 14px !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  .hero-content h1 {
+    width: 100% !important;
+    max-width: 330px !important;
+
+    font-size: 46px !important;
+    line-height: 0.96 !important;
+    letter-spacing: -0.045em !important;
+
+    color: rgba(255,255,255,0.95) !important;
+  }
+
+  .hero-subtitle {
+    width: 100% !important;
+    max-width: 280px !important;
+
+    margin-top: 18px !important;
+    margin-left: 0 !important;
+
+    font-size: 18px !important;
+    line-height: 1.18 !important;
+
+    color: rgba(235,245,255,0.86) !important;
+  }
+
+  .hero-logo-small {
+    width: 150px !important;
+    margin-top: 16px !important;
+    margin-left: 0 !important;
+  }
+
+  .hero-button {
+    position: relative !important;
+    z-index: 40 !important;
+
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+
+    width: 100% !important;
+    max-width: 280px !important;
+    min-width: 0 !important;
+    height: 58px !important;
+
+    margin-top: 24px !important;
+
+    padding: 0 9px 0 24px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    border-radius: 999px !important;
+  }
+
+  .hero-button span {
+    font-size: 21px !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+  }
+
+  .hero-button strong {
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+
+    font-size: 34px !important;
+  }
+
+  .level-card {
+    order: 2 !important;
+
+    position: relative !important;
+    z-index: 25 !important;
+
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+
+    width: 100% !important;
+    max-width: 320px !important;
+    min-height: auto !important;
+
+    margin-top: 30px !important;
+    margin-left: 0 !important;
+
+    padding: 15px !important;
+
+    border-radius: 22px !important;
+
+    transform: rotate(-2deg) !important;
+    animation: cardFloatMobile 4.5s ease-in-out infinite !important;
+  }
+
+  .level-top {
+    display: grid !important;
+    grid-template-columns: 54px 1fr auto !important;
+    gap: 11px !important;
+    align-items: center !important;
+  }
+
+  .level-badge {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 16px !important;
+    font-size: 24px !important;
+  }
+
+  .level-info span {
+    font-size: 10px !important;
+    letter-spacing: 0.12em !important;
+    margin-bottom: 4px !important;
+  }
+
+  .level-info p {
+    font-size: 13px !important;
+    line-height: 1.05 !important;
+    margin-bottom: 4px !important;
+  }
+
+  .level-info strong {
+    font-size: 13px !important;
+  }
+
+  .xp-pill {
+    padding: 8px 9px !important;
+    font-size: 11px !important;
+    border-radius: 11px !important;
+    white-space: nowrap !important;
+  }
+
+  .level-progress {
+    width: calc(100% - 66px) !important;
+    margin-left: 66px !important;
+    margin-top: 11px !important;
+    height: 6px !important;
+  }
+
+  .achievements-box {
+    margin-top: 15px !important;
+    padding: 13px 9px 12px !important;
+    border-radius: 17px !important;
+  }
+
+  .achievements-box h4 {
+    font-size: 9px !important;
+    letter-spacing: 0.25em !important;
+    margin-bottom: 12px !important;
+  }
+
+  .achievements-grid span {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 17px !important;
+    margin-bottom: 7px !important;
+  }
+
+  .achievements-grid p {
+    font-size: 11px !important;
+    line-height: 1.08 !important;
+  }
+}
+
+/* iPhone menor */
+@media (max-width: 420px) {
+  .hero {
+    padding: 24px 20px 110px !important;
+  }
+
+  .hero-content h1 {
+    font-size: 42px !important;
+    max-width: 300px !important;
+  }
+
+  .hero-subtitle {
+    font-size: 17px !important;
+    max-width: 250px !important;
+  }
+
+  .hero-button {
+    max-width: 260px !important;
+    height: 56px !important;
+  }
+
+  .level-card {
+    max-width: 300px !important;
+    margin-top: 26px !important;
+  }
+}
