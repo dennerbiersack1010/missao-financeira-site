@@ -1842,3 +1842,202 @@ a {
     margin-top: 54px !important;
   }
 }
+
+/* =====================================================
+   MOBILE CLEAN — SEM CARD, MULHER CENTRALIZADA
+   ===================================================== */
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: 100svh !important;
+    height: 100svh !important;
+
+    padding: 0 24px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    overflow: hidden !important;
+    text-align: center !important;
+  }
+
+  /* remove o card no mobile */
+  .level-card {
+    display: none !important;
+  }
+
+  /* centraliza melhor a mulher */
+  .hero-bg img {
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    object-position: center center !important;
+
+    transform: scale(1.03) !important;
+    opacity: 0.72 !important;
+
+    filter: brightness(1.04) contrast(1.05) saturate(1.04) !important;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(2, 7, 15, 0.26) 0%,
+        rgba(2, 7, 15, 0.38) 42%,
+        rgba(2, 7, 15, 0.82) 100%
+      ),
+      radial-gradient(
+        circle at center,
+        rgba(40, 130, 255, 0.10),
+        transparent 48%
+      ) !important;
+  }
+
+  .hero-grid {
+    background-size: 220px 220px !important;
+    opacity: 0.12 !important;
+  }
+
+  .hero-content {
+    position: relative !important;
+    z-index: 30 !important;
+
+    width: 100% !important;
+    max-width: 340px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+    transform: none !important;
+  }
+
+  .hero-content h1 {
+    width: 100% !important;
+    max-width: 330px !important;
+
+    margin: 0 auto !important;
+
+    font-family: "Manrope", "Rajdhani", sans-serif !important;
+    font-size: 39px !important;
+    font-weight: 600 !important;
+    line-height: 1.02 !important;
+    letter-spacing: -0.045em !important;
+
+    text-align: center !important;
+    color: rgba(255, 255, 255, 0.98) !important;
+
+    text-shadow:
+      0 0 18px rgba(255,255,255,0.08),
+      0 0 32px rgba(80,160,255,0.14) !important;
+  }
+
+  .hero-subtitle {
+    width: 100% !important;
+    max-width: 285px !important;
+
+    margin: 20px auto 0 !important;
+
+    font-family: "Plus Jakarta Sans", "Rajdhani", sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 1.35 !important;
+
+    text-align: center !important;
+    color: rgba(235, 245, 255, 0.88) !important;
+  }
+
+  .hero-logo-small {
+    width: 142px !important;
+    height: auto !important;
+
+    margin: 20px auto 0 !important;
+
+    display: block !important;
+    opacity: 0.90 !important;
+  }
+
+  .hero-button {
+    position: relative !important;
+    z-index: 35 !important;
+
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+
+    width: 100% !important;
+    max-width: 220px !important;
+    min-width: 0 !important;
+    height: 52px !important;
+
+    margin: 28px auto 0 !important;
+    padding: 0 8px 0 22px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    border-radius: 999px !important;
+    overflow: hidden !important;
+  }
+
+  .hero-button span {
+    font-family: "Manrope", "Rajdhani", sans-serif !important;
+    font-size: 17px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+  }
+
+  .hero-button strong {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+
+    font-size: 28px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-content {
+    max-width: 320px !important;
+  }
+
+  .hero-content h1 {
+    font-size: 37px !important;
+    max-width: 305px !important;
+  }
+
+  .hero-subtitle {
+    font-size: 15.5px !important;
+    max-width: 270px !important;
+  }
+
+  .hero-logo-small {
+    width: 132px !important;
+  }
+
+  .hero-button {
+    max-width: 210px !important;
+    height: 50px !important;
+  }
+
+  .hero-button span {
+    font-size: 16px !important;
+  }
+
+  .hero-button strong {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    font-size: 26px !important;
+  }
+}
